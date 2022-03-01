@@ -10,6 +10,7 @@ gmaps = googlemaps.Client(key="AIzaSyAw2wtEBHUuMMik8_jq_TixPz9B5mD0Xws")
 
 
 app = Flask(__name__)
+api = Api(app)
 
 @app.route('/findWaysPoints/<float:lat>/<float:lng>/<int:limite>',methods=['GET'])
 def findWaysPoints(lat,lng,limite):
