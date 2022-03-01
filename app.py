@@ -4,9 +4,6 @@ from flask import Flask, jsonify, request
 from flask_restful import Api, Resource
 
 import requests
-import googlemaps
-
-gmaps = googlemaps.Client(key="AIzaSyAw2wtEBHUuMMik8_jq_TixPz9B5mD0Xws")
 
 app = Flask(__name__)
 api = Api(app)
